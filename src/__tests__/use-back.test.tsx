@@ -1,7 +1,6 @@
 import {fireEvent, render, waitFor} from "@testing-library/react";
 import {BrowserRouter, useLocation} from "react-router-dom";
-import {useBack} from "../use-back.js";
-
+import {useBack} from "..";
 
 
 describe("use back", () => {
