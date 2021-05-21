@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "es2020",
+		"target": "es2020",
+		"lib": [
+			"dom",
+			"esnext"
+		],
+		"strict": true,
+		"esModuleInterop": true,
+		"outDir": "lib",
+		"moduleResolution": "node",
+		"declaration": true,
+		"jsx": "react-jsx",
+	},
+	"include": [
+		"src",
+		"config",
+	],
+	"exclude": [
+		"node_modules",
+		"lib",
+	],
+}

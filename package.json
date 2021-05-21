@@ -1,0 +1,81 @@
+{
+  "name": "use-back",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "React Router DOM hook for navigating back without leaving your website",
+  "keywords": [
+    "react",
+    "react-router",
+    "router",
+    "back",
+    "hook"
+  ],
+  "homepage": "https://github.com/evelynhathaway/use-back#readme",
+  "bugs": {
+    "url": "https://github.com/evelynhathaway/use-back/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelynhathaway/use-back.git"
+  },
+  "license": "MIT",
+  "author": "Evelyn Hathaway <npm@evelyn.dev> (https://evelyn.dev)",
+  "sideEffects": false,
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "/lib"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "tsc -p ./tsconfig-build.json",
+    "lint": "eslint ./",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "commitlint": {
+    "extends": "./node_modules/conventional-changelog-evelyn/commitlint.config.js"
+  },
+  "lint-staged": {
+    "**/package.json": "sort-package-json",
+    "./": "eslint --fix"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "commitlint": "^12.1.4",
+    "conventional-changelog-evelyn": "^1.3.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-evelyn": "6.0.2",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-regexp": "^0.10.0",
+    "eslint-plugin-unicorn": "^32.0.1",
+    "husky": "^6.0.0",
+    "jest": "27.0.0-next.9",
+    "jest-location-mock": "^1.0.7",
+    "lint-staged": "^11.0.0",
+    "semantic-release": "^17.4.3",
+    "sort-package-json": "^1.50.0",
+    "ts-jest": "27.0.0-next.12",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-router-dom": "^6.0.0-beta.0"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "release": {
+    "extends": "conventional-changelog-evelyn/release.config.js"
+  }
+}
