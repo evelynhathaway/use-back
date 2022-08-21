@@ -1,6 +1,6 @@
 {
   "name": "use-back",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Router DOM hook for navigating back without leaving your website",
   "keywords": [
     "react",
