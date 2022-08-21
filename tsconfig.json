@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"module": "es2020",
+		"module": "Node16",
 		"target": "es2020",
 		"lib": [
 			"dom",
@@ -9,7 +9,7 @@
 		"strict": true,
 		"esModuleInterop": true,
 		"outDir": "lib",
-		"moduleResolution": "node",
+		"moduleResolution": "node16",
 		"declaration": true,
 		"jsx": "react-jsx",
 	},
