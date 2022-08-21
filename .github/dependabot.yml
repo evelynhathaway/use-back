@@ -2,8 +2,11 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    allow:
+      - dependency-type: production
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    versioning-strategy: increase
     commit-message:
       prefix: "Upgrade(npm):"
       prefix-development: "Upgrade(dev):"
